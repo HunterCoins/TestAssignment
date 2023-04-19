@@ -1,0 +1,369 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol,
+ul {
+    list-style: none;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-color: rgb(236, 236, 236);
+}
+
+.content__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.75);
+    margin-top: 25px;
+    text-align: center;
+}
+
+.plans {
+    margin: 60px auto 0 auto;
+    padding: 0 40px 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1440px;
+}
+
+.plans__card {
+    background-color: #fff;
+    width: 25%;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 15px rgba(218, 216, 216, 0.75);
+    height: auto;
+}
+
+.plans__card:hover {
+    border: 2px solid rgb(130, 214, 20);
+    transform: scale(1.05);
+    position: relative;
+    z-index: 100;
+    box-shadow: 0px 0px 4px rgb(130, 214, 20);
+}
+
+.plans__card:hover .plan__btn {
+    background: rgb(130, 214, 20);
+    border-color: rgb(130, 214, 20);
+}
+
+.plans__inner-relative {
+    position: relative;
+}
+
+.price__block {
+    text-align: center;
+}
+.price__block h5 {
+    font-size: 1.3rem;
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 600;
+}
+
+.price__inner {
+    margin-top: 35px;
+}
+
+.price__inner .price__currency {
+    color: rgb(32 74 117);
+    font-size: 1.5rem;
+}
+
+.price__inner .price__amount {
+    color: rgb(32 74 117);
+    font-size: 4.5rem;
+    line-height: 100px;
+}
+
+.price__inner span {
+    color: #8d8c8c;
+}
+
+.plan__advantage img {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+.plan__advantages {
+    margin-top: 20px;
+    padding: 20px;
+}
+.plan__advantage {
+    color: #929292;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 24px;
+}
+
+.btn__wrapper {
+    width: 100%;
+}
+.plan__btn {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #908f8f;
+    border-radius: 8px;
+    padding: 15px 0;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.ribbon {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: -30px;
+    right: -30px;
+    overflow: hidden;
+}
+.ribbon::after,
+.ribbon::before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    display: block;
+    border: 3px solid rgb(214, 79, 79);
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.ribbon::before {
+    top: 0;
+    left: 51px;
+}
+
+.ribbon::after {
+    bottom: 1px;
+    right: 0;
+}
+
+.ribbon span {
+    position: absolute;
+    display: block;
+    width: 270px;
+    height: 16px;
+    padding: 4px 0;
+    background-color: rgb(214, 79, 79);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    text-align: center;
+    left: -25px;
+    top: 30px;
+    transform: rotate(45deg);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1199.98px) {
+    .content__title {
+        font-size: 1.7rem;
+    }
+    .price__block h5 {
+        font-size: 1.1rem;
+    }
+    .plans__card {
+        padding: 20px;
+    }
+    .plan__advantage {
+        font-size: 0.9rem;
+    }
+    .plan__advantages {
+        padding: 15px;
+    }
+    .price__inner .price__amount {
+        font-size: 3.6rem;
+        line-height: 80px;
+    }
+    .ribbon::after {
+        bottom: 0px;
+        right: 0px;
+    }
+    .ribbon::before {
+        top: 0;
+        left: 18px;
+    }
+
+    .ribbon {
+        width: 91px;
+        height: 73px;
+        top: -25px;
+        right: -28px;
+    }
+
+    .ribbon span {
+        width: 167px;
+        height: 11px;
+        padding-right: 25px;
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 991.98px) {
+    .plans {
+        flex-direction: column;
+        align-items: center;
+        gap: 2px;
+        padding: 0 60px 60px 60px;
+    }
+    .plans__card {
+        width: 100%;
+        padding: 20px;
+        max-width: 768px;
+    }
+    .card__body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 50px;
+    }
+    .btn__wrapper {
+        grid-column: 1/3;
+    }
+    .price__inner {
+        margin-top: 55px;
+    }
+    .plans__card:first-child .price__inner {
+        margin-top: 35px;
+    }
+    .ribbon {
+        right: -26px;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .plans {
+        padding: 0 40px 60px 40px;
+    }
+
+    .price__inner .price__amount {
+        font-size: 3rem;
+        line-height: 60px;
+    }
+    .card__body {
+        grid-template-columns: 1fr;
+        grid-template-rows: unset;
+    }
+    .btn__wrapper {
+        grid-column: unset;
+    }
+}
